@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RentCar.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,15 @@ namespace RentCar.UI
 
         private void RentCar_Load(object sender, EventArgs e)
         {
+            using (var context = new MyContext())
+            {
+                var fuelTypes = context.FuelTypes.ToList();
+                comboBox1.Items.Add(fuelTypes);
+            }
+        }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }
