@@ -57,12 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201910052123015_InitialCreate.cs" />
     <Compile Include="Migrations\201910052123015_InitialCreate.designer.cs">
       <DependentUpon>201910052123015_InitialCreate.cs</DependentUpon>
@@ -70,9 +64,12 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="RentCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentCar.Designer.cs">
+      <DependentUpon>RentCar.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Migrations\201910052123015_InitialCreate.resx">
       <DependentUpon>201910052123015_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +82,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RentCar.resx">
+      <DependentUpon>RentCar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
