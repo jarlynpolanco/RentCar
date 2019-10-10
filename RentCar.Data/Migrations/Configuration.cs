@@ -1,4 +1,4 @@
-﻿namespace RentCar.UI.Migrations
+﻿namespace RentCar.Data.Migrations
 {
     using System;
     using System.Data.Entity;

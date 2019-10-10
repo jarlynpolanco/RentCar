@@ -5,7 +5,7 @@ namespace RentCar.Context
 {
     public class MyContext:DbContext
     {
-        public MyContext() : base("RentCarDbConnection")
+        public MyContext() : base("name=RentCarDbConnection")
         {
 
         }

@@ -17,7 +17,6 @@ namespace RentCar.Data.Entities
         public int EmployeeID { get; set; }
         [Required]
         public DateTime Date { get; set; }
-        [Required]
         public DateTime ReturnDate { get; set; }
         [Required]
         public double AmountPerDay { get; set; }

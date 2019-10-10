@@ -1,9 +1,9 @@
-﻿namespace RentCar.UI.Migrations
+﻿namespace RentCar.Data.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class Migration : DbMigration
     {
         public override void Up()
         {

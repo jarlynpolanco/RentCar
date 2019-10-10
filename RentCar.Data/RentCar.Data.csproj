@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\MyContext.cs" />
     <Compile Include="Entities\AbstractEntity.cs" />
     <Compile Include="Entities\Brand.cs" />
     <Compile Include="Entities\Client.cs" />
@@ -67,11 +68,35 @@
     <Compile Include="Enums\FuelQuantity.cs" />
     <Compile Include="Enums\PersonType.cs" />
     <Compile Include="Enums\Shift.cs" />
+    <Compile Include="Migrations\201910091701486_Migration.cs" />
+    <Compile Include="Migrations\201910091701486_Migration.designer.cs">
+      <DependentUpon>201910091701486_Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910101357456_Migration1.cs" />
+    <Compile Include="Migrations\201910101357456_Migration1.designer.cs">
+      <DependentUpon>201910101357456_Migration1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910101527410_FinalMigration.cs" />
+    <Compile Include="Migrations\201910101527410_FinalMigration.designer.cs">
+      <DependentUpon>201910101527410_FinalMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910091701486_Migration.resx">
+      <DependentUpon>201910091701486_Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910101357456_Migration1.resx">
+      <DependentUpon>201910101357456_Migration1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910101527410_FinalMigration.resx">
+      <DependentUpon>201910101527410_FinalMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

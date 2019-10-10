@@ -16,6 +16,8 @@ namespace RentCar.Data.Entities
         public string MotorNumber { get; set; }
         [Required]
         public string Plate { get; set; }
+        [Required]
+        public bool StateRent { get; set; }
 
         public Model Model { get; set; }
         public FuelType FuelType { get; set; }
